@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		050B6FE22A5E4EE8002DFF38 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050B6FE12A5E4EE8002DFF38 /* String+Extensions.swift */; };
+		050D653B2AEC95E5002E7D6E /* PaidBillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D653A2AEC95E5002E7D6E /* PaidBillModel.swift */; };
+		050D653D2AEC975C002E7D6E /* PaidBillsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 050D653C2AEC975C002E7D6E /* PaidBillsListView.swift */; };
+		057062432B3A72D200ACBCA3 /* PaidBillDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057062422B3A72D200ACBCA3 /* PaidBillDetailsView.swift */; };
+		05C41D0C2A54EE9D0007B11E /* BillHiveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D0B2A54EE9D0007B11E /* BillHiveApp.swift */; };
+		05C41D102A54EE9E0007B11E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C41D0F2A54EE9E0007B11E /* Assets.xcassets */; };
+		05C41D132A54EE9E0007B11E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05C41D122A54EE9E0007B11E /* Preview Assets.xcassets */; };
+		05C41D1B2A54EEC20007B11E /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D1A2A54EEC20007B11E /* Date+Extensions.swift */; };
+		05C41D1D2A54EED30007B11E /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D1C2A54EED30007B11E /* Color+Extensions.swift */; };
+		05C41D1F2A54EEE10007B11E /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D1E2A54EEE10007B11E /* Double+Extensions.swift */; };
+		05C41D222A54EEFB0007B11E /* FirstAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D212A54EEFB0007B11E /* FirstAppearance.swift */; };
+		05C41D242A54EF030007B11E /* EnterNextPayDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D232A54EF030007B11E /* EnterNextPayDateView.swift */; };
+		05C41D262A54EF140007B11E /* BillsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D252A54EF140007B11E /* BillsListView.swift */; };
+		05C41D292A54EFA00007B11E /* AddBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D282A54EFA00007B11E /* AddBillView.swift */; };
+		05C41D2B2A54EFA90007B11E /* CheckInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D2A2A54EFA90007B11E /* CheckInView.swift */; };
+		05C41D2D2A54EFB80007B11E /* TodayIsPaydayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D2C2A54EFB80007B11E /* TodayIsPaydayView.swift */; };
+		05C41D2F2A54EFC20007B11E /* EditBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D2E2A54EFC20007B11E /* EditBillView.swift */; };
+		05C41D312A54EFCB0007B11E /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D302A54EFCB0007B11E /* MenuView.swift */; };
+		05C41D342A54EFFE0007B11E /* CoinAppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D322A54EFFE0007B11E /* CoinAppModel.xcdatamodeld */; };
+		05C41D3A2A54F06D0007B11E /* BillsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D392A54F06D0007B11E /* BillsListViewModel.swift */; };
+		05C41D3C2A54F07D0007B11E /* EnterNextPayDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D3B2A54F07D0007B11E /* EnterNextPayDateViewModel.swift */; };
+		05C41D3E2A54F0900007B11E /* CheckInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D3D2A54F0900007B11E /* CheckInViewModel.swift */; };
+		05C41D412A54F0B40007B11E /* AddBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D402A54F0B40007B11E /* AddBillViewModel.swift */; };
+		05C41D432A54F0C40007B11E /* EnterPayDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D422A54F0C40007B11E /* EnterPayDateViewModel.swift */; };
+		05C41D452A54F0D50007B11E /* EditBillViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D442A54F0D50007B11E /* EditBillViewModel.swift */; };
+		05C41D472A54F0EA0007B11E /* FirstAppearanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D462A54F0EA0007B11E /* FirstAppearanceViewModel.swift */; };
+		05C41D492A54F0F40007B11E /* MenuViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D482A54F0F40007B11E /* MenuViewViewModel.swift */; };
+		05C41D4B2A54F0FF0007B11E /* DataPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D4A2A54F0FF0007B11E /* DataPersistence.swift */; };
+		05C41D4E2A54F10D0007B11E /* BillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D4D2A54F10D0007B11E /* BillModel.swift */; };
+		05C41D502A54F1370007B11E /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D4F2A54F1370007B11E /* UserManager.swift */; };
+		05C41D522A54F1490007B11E /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C41D512A54F1490007B11E /* NotificationManager.swift */; };
+		05EF702F2A54FE59003167CC /* InfoViewFromList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF702E2A54FE59003167CC /* InfoViewFromList.swift */; };
+		05EF70312A54FF02003167CC /* EnterPayDateFromBillListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EF70302A54FF02003167CC /* EnterPayDateFromBillListViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		050B6FE12A5E4EE8002DFF38 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		050D653A2AEC95E5002E7D6E /* PaidBillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidBillModel.swift; sourceTree = "<group>"; };
+		050D653C2AEC975C002E7D6E /* PaidBillsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidBillsListView.swift; sourceTree = "<group>"; };
+		057062422B3A72D200ACBCA3 /* PaidBillDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaidBillDetailsView.swift; sourceTree = "<group>"; };
+		05C41D082A54EE9D0007B11E /* BillHive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillHive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05C41D0B2A54EE9D0007B11E /* BillHiveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillHiveApp.swift; sourceTree = "<group>"; };
+		05C41D0F2A54EE9E0007B11E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05C41D122A54EE9E0007B11E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		05C41D1A2A54EEC20007B11E /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		05C41D1C2A54EED30007B11E /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		05C41D1E2A54EEE10007B11E /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		05C41D212A54EEFB0007B11E /* FirstAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppearance.swift; sourceTree = "<group>"; };
+		05C41D232A54EF030007B11E /* EnterNextPayDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNextPayDateView.swift; sourceTree = "<group>"; };
+		05C41D252A54EF140007B11E /* BillsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsListView.swift; sourceTree = "<group>"; };
+		05C41D282A54EFA00007B11E /* AddBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillView.swift; sourceTree = "<group>"; };
+		05C41D2A2A54EFA90007B11E /* CheckInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInView.swift; sourceTree = "<group>"; };
+		05C41D2C2A54EFB80007B11E /* TodayIsPaydayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayIsPaydayView.swift; sourceTree = "<group>"; };
+		05C41D2E2A54EFC20007B11E /* EditBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBillView.swift; sourceTree = "<group>"; };
+		05C41D302A54EFCB0007B11E /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		05C41D332A54EFFE0007B11E /* CoinAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoinAppModel.xcdatamodel; sourceTree = "<group>"; };
+		05C41D392A54F06D0007B11E /* BillsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillsListViewModel.swift; sourceTree = "<group>"; };
+		05C41D3B2A54F07D0007B11E /* EnterNextPayDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNextPayDateViewModel.swift; sourceTree = "<group>"; };
+		05C41D3D2A54F0900007B11E /* CheckInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInViewModel.swift; sourceTree = "<group>"; };
+		05C41D402A54F0B40007B11E /* AddBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewModel.swift; sourceTree = "<group>"; };
+		05C41D422A54F0C40007B11E /* EnterPayDateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPayDateViewModel.swift; sourceTree = "<group>"; };
+		05C41D442A54F0D50007B11E /* EditBillViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBillViewModel.swift; sourceTree = "<group>"; };
+		05C41D462A54F0EA0007B11E /* FirstAppearanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAppearanceViewModel.swift; sourceTree = "<group>"; };
+		05C41D482A54F0F40007B11E /* MenuViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewViewModel.swift; sourceTree = "<group>"; };
+		05C41D4A2A54F0FF0007B11E /* DataPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPersistence.swift; sourceTree = "<group>"; };
+		05C41D4D2A54F10D0007B11E /* BillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillModel.swift; sourceTree = "<group>"; };
+		05C41D4F2A54F1370007B11E /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		05C41D512A54F1490007B11E /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		05EF702E2A54FE59003167CC /* InfoViewFromList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewFromList.swift; sourceTree = "<group>"; };
+		05EF70302A54FF02003167CC /* EnterPayDateFromBillListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPayDateFromBillListViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		05C41D052A54EE9D0007B11E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C41CFF2A54EE9D0007B11E = {
+			isa = PBXGroup;
+			children = (
+				05C41D322A54EFFE0007B11E /* CoinAppModel.xcdatamodeld */,
+				05C41D0A2A54EE9D0007B11E /* BillHive */,
+				05C41D092A54EE9D0007B11E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		05C41D092A54EE9D0007B11E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D082A54EE9D0007B11E /* BillHive.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		05C41D0A2A54EE9D0007B11E /* BillHive */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D0B2A54EE9D0007B11E /* BillHiveApp.swift */,
+				05C41D192A54EEB30007B11E /* Type+Extensions */,
+				05C41D202A54EEE90007B11E /* Views */,
+				05C41D272A54EF8A0007B11E /* SubViews */,
+				05C41D0F2A54EE9E0007B11E /* Assets.xcassets */,
+				05C41D352A54F04D0007B11E /* ViewModels  */,
+				05C41D4C2A54F1020007B11E /* Models */,
+				05C41D3F2A54F0970007B11E /* Managers */,
+				05C41D112A54EE9E0007B11E /* Preview Content */,
+			);
+			path = BillHive;
+			sourceTree = "<group>";
+		};
+		05C41D112A54EE9E0007B11E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D122A54EE9E0007B11E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05C41D192A54EEB30007B11E /* Type+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D1A2A54EEC20007B11E /* Date+Extensions.swift */,
+				05C41D1C2A54EED30007B11E /* Color+Extensions.swift */,
+				05C41D1E2A54EEE10007B11E /* Double+Extensions.swift */,
+				050B6FE12A5E4EE8002DFF38 /* String+Extensions.swift */,
+			);
+			path = "Type+Extensions";
+			sourceTree = "<group>";
+		};
+		05C41D202A54EEE90007B11E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D212A54EEFB0007B11E /* FirstAppearance.swift */,
+				05C41D232A54EF030007B11E /* EnterNextPayDateView.swift */,
+				05EF702E2A54FE59003167CC /* InfoViewFromList.swift */,
+				05C41D252A54EF140007B11E /* BillsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		05C41D272A54EF8A0007B11E /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D282A54EFA00007B11E /* AddBillView.swift */,
+				05C41D2A2A54EFA90007B11E /* CheckInView.swift */,
+				05C41D2C2A54EFB80007B11E /* TodayIsPaydayView.swift */,
+				05C41D2E2A54EFC20007B11E /* EditBillView.swift */,
+				05C41D302A54EFCB0007B11E /* MenuView.swift */,
+				050D653C2AEC975C002E7D6E /* PaidBillsListView.swift */,
+				057062422B3A72D200ACBCA3 /* PaidBillDetailsView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
+		05C41D352A54F04D0007B11E /* ViewModels  */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D392A54F06D0007B11E /* BillsListViewModel.swift */,
+				05C41D3B2A54F07D0007B11E /* EnterNextPayDateViewModel.swift */,
+				05EF70302A54FF02003167CC /* EnterPayDateFromBillListViewModel.swift */,
+				05C41D3D2A54F0900007B11E /* CheckInViewModel.swift */,
+				05C41D402A54F0B40007B11E /* AddBillViewModel.swift */,
+				05C41D422A54F0C40007B11E /* EnterPayDateViewModel.swift */,
+				05C41D442A54F0D50007B11E /* EditBillViewModel.swift */,
+				05C41D462A54F0EA0007B11E /* FirstAppearanceViewModel.swift */,
+				05C41D482A54F0F40007B11E /* MenuViewViewModel.swift */,
+			);
+			path = "ViewModels ";
+			sourceTree = "<group>";
+		};
+		05C41D3F2A54F0970007B11E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D4A2A54F0FF0007B11E /* DataPersistence.swift */,
+				05C41D4F2A54F1370007B11E /* UserManager.swift */,
+				05C41D512A54F1490007B11E /* NotificationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		05C41D4C2A54F1020007B11E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				05C41D4D2A54F10D0007B11E /* BillModel.swift */,
+				050D653A2AEC95E5002E7D6E /* PaidBillModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		05C41D072A54EE9D0007B11E /* BillHive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05C41D162A54EE9E0007B11E /* Build configuration list for PBXNativeTarget "BillHive" */;
+			buildPhases = (
+				05C41D042A54EE9D0007B11E /* Sources */,
+				05C41D052A54EE9D0007B11E /* Frameworks */,
+				05C41D062A54EE9D0007B11E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BillHive;
+			productName = BillHive;
+			productReference = 05C41D082A54EE9D0007B11E /* BillHive.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05C41D002A54EE9D0007B11E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					05C41D072A54EE9D0007B11E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 05C41D032A54EE9D0007B11E /* Build configuration list for PBXProject "BillHive" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 05C41CFF2A54EE9D0007B11E;
+			productRefGroup = 05C41D092A54EE9D0007B11E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				05C41D072A54EE9D0007B11E /* BillHive */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05C41D062A54EE9D0007B11E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C41D132A54EE9E0007B11E /* Preview Assets.xcassets in Resources */,
+				05C41D102A54EE9E0007B11E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05C41D042A54EE9D0007B11E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05C41D292A54EFA00007B11E /* AddBillView.swift in Sources */,
+				05C41D2B2A54EFA90007B11E /* CheckInView.swift in Sources */,
+				050D653B2AEC95E5002E7D6E /* PaidBillModel.swift in Sources */,
+				05C41D452A54F0D50007B11E /* EditBillViewModel.swift in Sources */,
+				05C41D0C2A54EE9D0007B11E /* BillHiveApp.swift in Sources */,
+				050D653D2AEC975C002E7D6E /* PaidBillsListView.swift in Sources */,
+				05C41D472A54F0EA0007B11E /* FirstAppearanceViewModel.swift in Sources */,
+				05C41D522A54F1490007B11E /* NotificationManager.swift in Sources */,
+				05C41D492A54F0F40007B11E /* MenuViewViewModel.swift in Sources */,
+				057062432B3A72D200ACBCA3 /* PaidBillDetailsView.swift in Sources */,
+				05C41D3E2A54F0900007B11E /* CheckInViewModel.swift in Sources */,
+				050B6FE22A5E4EE8002DFF38 /* String+Extensions.swift in Sources */,
+				05EF70312A54FF02003167CC /* EnterPayDateFromBillListViewModel.swift in Sources */,
+				05C41D222A54EEFB0007B11E /* FirstAppearance.swift in Sources */,
+				05C41D4B2A54F0FF0007B11E /* DataPersistence.swift in Sources */,
+				05EF702F2A54FE59003167CC /* InfoViewFromList.swift in Sources */,
+				05C41D3C2A54F07D0007B11E /* EnterNextPayDateViewModel.swift in Sources */,
+				05C41D262A54EF140007B11E /* BillsListView.swift in Sources */,
+				05C41D2D2A54EFB80007B11E /* TodayIsPaydayView.swift in Sources */,
+				05C41D312A54EFCB0007B11E /* MenuView.swift in Sources */,
+				05C41D342A54EFFE0007B11E /* CoinAppModel.xcdatamodeld in Sources */,
+				05C41D432A54F0C40007B11E /* EnterPayDateViewModel.swift in Sources */,
+				05C41D1B2A54EEC20007B11E /* Date+Extensions.swift in Sources */,
+				05C41D1D2A54EED30007B11E /* Color+Extensions.swift in Sources */,
+				05C41D502A54F1370007B11E /* UserManager.swift in Sources */,
+				05C41D2F2A54EFC20007B11E /* EditBillView.swift in Sources */,
+				05C41D1F2A54EEE10007B11E /* Double+Extensions.swift in Sources */,
+				05C41D242A54EF030007B11E /* EnterNextPayDateView.swift in Sources */,
+				05C41D3A2A54F06D0007B11E /* BillsListViewModel.swift in Sources */,
+				05C41D4E2A54F10D0007B11E /* BillModel.swift in Sources */,
+				05C41D412A54F0B40007B11E /* AddBillViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		05C41D142A54EE9E0007B11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		05C41D152A54EE9E0007B11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		05C41D172A54EE9E0007B11E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.4;
+				DEVELOPMENT_ASSET_PATHS = "\"BillHive/Preview Content\"";
+				DEVELOPMENT_TEAM = P6UNQT2KX2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.4;
+				PRODUCT_BUNDLE_IDENTIFIER = budgetPadAppJSha.BillHive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		05C41D182A54EE9E0007B11E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2.4;
+				DEVELOPMENT_ASSET_PATHS = "\"BillHive/Preview Content\"";
+				DEVELOPMENT_TEAM = P6UNQT2KX2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.4;
+				PRODUCT_BUNDLE_IDENTIFIER = budgetPadAppJSha.BillHive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		05C41D032A54EE9D0007B11E /* Build configuration list for PBXProject "BillHive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C41D142A54EE9E0007B11E /* Debug */,
+				05C41D152A54EE9E0007B11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05C41D162A54EE9E0007B11E /* Build configuration list for PBXNativeTarget "BillHive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05C41D172A54EE9E0007B11E /* Debug */,
+				05C41D182A54EE9E0007B11E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		05C41D322A54EFFE0007B11E /* CoinAppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05C41D332A54EFFE0007B11E /* CoinAppModel.xcdatamodel */,
+			);
+			currentVersion = 05C41D332A54EFFE0007B11E /* CoinAppModel.xcdatamodel */;
+			path = CoinAppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 05C41D002A54EE9D0007B11E /* Project object */;
+}
